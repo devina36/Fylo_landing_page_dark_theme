@@ -129,7 +129,7 @@ footer {
 #two a:hover {
   color: var(--white);
   border-bottom: 1px solid var(--white);
-  width: fit-content;
+  width: min-content;
 }
 
 #two a:hover::after {

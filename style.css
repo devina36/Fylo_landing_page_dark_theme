@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+:root {
+  /* COLOR */
+  --bg_intro: hsl(217, 28%, 15%);
+  --bg_main: hsl(218, 28%, 13%);
+  --bg_footer: hsl(216, 53%, 9%);
+  --bg_testi: hsl(219, 30%, 18%);
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --gradient: linear-gradient(to right, var(--cyan), var(--blue));
+  --light_red: hsl(0, 100%, 63%);
+  --white: hsl(0, 0%, 100%);
+
+  /* FONT FAMILY */
+  --sans: 'Open Sans', sans-serif;
+  --raleway: 'Raleway', sans-serif;
+
+  /* FONT WEIGHT */
+  --weight4: 400;
+  --weight7: 700;
+}
+
+body {
+  margin: 0;
+  background: var(--bg_main);
+  color: var(--white);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--raleway);
+}
+
+header {
+  background-image: url('./images/bg-curvy-mobile.svg');
+  background-color: var(--bg_intro);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% auto;
+}
+
+/* header h1 {
+  line-height: 3rem !important;
+} */
+
+nav li {
+  font-family: var(--raleway);
+}
+
+p {
+  font-family: var(--sans);
+}
+
+.btn {
+  background: var(--gradient) !important;
+}
+
+button:hover {
+  opacity: 0.6;
+}
+
+#three img {
+  height: 27px;
+  width: 27px;
+}
+
+/* #two h1 {
+  line-height: 3rem !important;
+} */
+
+#two a {
+  color: var(--cyan);
+  border-bottom: 1px solid var(--cyan);
+  width: fit-content;
+}
+
+.bg_card {
+  background: var(--bg_testi);
+}
+
+.koma {
+  position: relative;
+}
+
+.koma::before {
+  content: url('./images/bg-quotes.png');
+  position: absolute;
+  width: 55px;
+  height: 45px;
+  top: -2.3em;
+  left: -0.5em;
+  z-index: -1;
+}
+
+.bg_email {
+  background: var(--bg_intro);
+}
+
+#four {
+  top: -150px;
+}
+
+footer {
+  background: var(--bg_footer);
+  padding-bottom: 50px;
+}
+
+.location img {
+  width: 13px;
+  height: 18px;
+}
+
+.email {
+  width: 20px;
+  height: 16px;
+}
+
+.phone {
+  width: 18px;
+  height: 18px;
+}
+
+#four input {
+  color: var(--bg_main);
+}
+
+#two a:hover {
+  color: var(--white);
+  border-bottom: 1px solid var(--white);
+  width: fit-content;
+}
+
+#two a:hover::after {
+  content: url('images/icon-arrow\ white.svg');
+}
+
+#two a::after {
+  content: url('images/icon-arrow.svg');
+  width: 16px;
+  height: 16px;
+}
+
+.from_control small {
+  visibility: hidden;
+}
+
+.from_control.error small {
+  visibility: visible;
+}
+
+ion-icon:hover {
+  color: var(--cyan);
+  border-color: var(--cyan);
+}
+
+@media screen and (min-width: 375px) {
+  header {
+    background-image: url('./images/bg-curvy-desktop.svg');
+  }
+}
